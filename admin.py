@@ -3,9 +3,9 @@ from tkinter import ttk
 import mysql.connector
 import random
 from tkinter import messagebox as tmsg
-from teacher import teacher_win
-from student import student_page
-from course import course_window
+# from teacher import teacher_win
+# from student import student_page
+# from course import course_window
 
 
 class adminpage:
@@ -319,24 +319,24 @@ class adminpage:
         #     for widget in detail.winfo_children():
         #         widget.destroy()
         
-        def course_win():
-            new_window=Toplevel(root)
-            self.app=course_window(new_window)
+#         def course_win():
+#             new_window=Toplevel(root)
+#             self.app=course_window(new_window)
         
-        btn2=Button(btn_frame,text="COURSE DETAILS",command=course_win,cursor="hand2",font="lucida 16 bold",bg="black",fg="gold",width=20)
-        btn2.grid(row=0,column=2,padx=54,pady=25)
-# =================================================================Teacher details============================================================================================
-        def teacher_site():
-            new_window=Toplevel(root)
-            self.app=teacher_win(new_window)
-        btn3=Button(btn_frame,text="TEACHER DETAILS",command=teacher_site,cursor="hand2",font="lucida 16 bold",bg="black",fg="gold",width=20)
-        btn3.grid(row=0,column=3,padx=54,pady=25)
-# =======================================================================================STUDENT DETAIL=====================================================================
-        def student_site():
-            new_window=Toplevel(root)
-            self.app=student_page(new_window)
-        btn4=Button(btn_frame,text="STUDENT DETAILS",command=student_site,cursor="hand2",font="lucida 16 bold",bg="black",fg="gold",width=20)
-        btn4.grid(row=0,column=4,padx=54,pady=25)
+#         btn2=Button(btn_frame,text="COURSE DETAILS",command=course_win,cursor="hand2",font="lucida 16 bold",bg="black",fg="gold",width=20)
+#         btn2.grid(row=0,column=2,padx=54,pady=25)
+# # =================================================================Teacher details============================================================================================
+#         def teacher_site():
+#             new_window=Toplevel(root)
+#             self.app=teacher_win(new_window)
+#         btn3=Button(btn_frame,text="TEACHER DETAILS",command=teacher_site,cursor="hand2",font="lucida 16 bold",bg="black",fg="gold",width=20)
+#         btn3.grid(row=0,column=3,padx=54,pady=25)
+# # =======================================================================================STUDENT DETAIL=====================================================================
+#         def student_site():
+#             new_window=Toplevel(root)
+#             self.app=student_page(new_window)
+#         btn4=Button(btn_frame,text="STUDENT DETAILS",command=student_site,cursor="hand2",font="lucida 16 bold",bg="black",fg="gold",width=20)
+#         btn4.grid(row=0,column=4,padx=54,pady=25)
                
         
 if __name__=="__main__":
